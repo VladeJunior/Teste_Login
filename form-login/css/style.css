@@ -1,0 +1,33 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 100px;
+    margin-top: 100px;
+  }
+  
+  #message {
+    margin-top: 10px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .alert {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+  }
+  
+  .alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+  }
+  
