@@ -17,9 +17,6 @@ if ($conn->connect_error) {
 $nome = $_POST['nome'];
 $senha = $_POST['senha'];
 
-// Realize as validações e o processamento do cadastro de acordo com suas necessidades
-// ...
-
 // Insere os dados na tabela "users"
 $sql = "INSERT INTO users (username, password) VALUES ('$nome', '$senha')";
 if ($conn->query($sql) === true) {

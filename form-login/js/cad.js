@@ -77,7 +77,7 @@ $(document).ready(function() {
         if (confirm('Tem certeza de que deseja excluir este cadastro?')) {
           var cnpj = $('#cnpj2').val();
 
-          // Requisição AJAX para excluir o fabricante
+          // Requisição AJAX para excluir a empresa
           $.ajax({
             url: 'delete.php',
             type: 'POST',
@@ -91,7 +91,7 @@ $(document).ready(function() {
               }
             },
             error: function() {
-              alert('Erro na requisição AJAX para excluir o fabricante.');
+              alert('Erro na requisição AJAX para excluir a empresa.');
             }
           });
         }
