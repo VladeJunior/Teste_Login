@@ -26,6 +26,22 @@ if ($result->num_rows > 0) {
     // Fabricante não encontrado
     echo null;
 }
+/*
+// Consultar todos os registros de fabricantes no banco de dados
+$sql2 = "SELECT * FROM manufacturer_base";
+$result2 = $conn->query($sql2);
+
+if ($result2->num_rows > 0) {
+    // Fabricantes encontrados, retornar os dados em formato JSON
+    $rows = array();
+    while ($row2 = $result2->fetch_assoc()) {
+        $rows[] = $row2;
+    }
+    echo json_encode($rows);
+} else {
+    // Nenhum fabricante encontrado
+    echo null;
+}*/
 
 $conn->close();
 ?>

@@ -17,6 +17,8 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   $response = array('success' => true);
+  session_start();
+  $_SESSION['isLoggedIn'] = true;
 } else {
   $response = array('success' => false);
 }
